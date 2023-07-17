@@ -6,6 +6,8 @@ from pathlib import Path
 # TODO: don't add files that are already ignored
 # TODO: option to select .gitignore file (e.g. toplevel one vs subdir)
 # TODO: option to automatically add newly created .gitignore to git staging
+# TODO: (option to) automatically climb file tree until existing
+#   .gitignore is found (instead of blindly creating one in parent folder)
 
 
 def gitignore(path: Path, glob_stem: bool = False):
